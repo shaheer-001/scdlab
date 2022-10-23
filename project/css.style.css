@@ -53,12 +53,13 @@ color: var(--orange);
 .header .navbar a{
     font-size:.85rem;
     color:black;
+    margin: .2rem;
 }
 
 .header .navbar a:hover{
-    font-size:.90rem;
+    font-size:1rem;
     align-items: right;
-    margin: 0.25rem;
+    margin: .25rem;
     color:var(--orange);
 }
 
@@ -92,6 +93,38 @@ color: var(--orange);
     color: #080808;
 }
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    background: url(https://st3.depositphotos.com/10654668/15550/i/600/depositphotos_155503044-stock-photo-italian-pizza-on-baking-paper.jpg
+    );
+    background-size: 100% 100%;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    align-items: center;
+
+    width:20rem;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+    align-content: center;
+}
+
+.home .content h3 span{
+    color:var(--orange);
+}
+
+.home .content p{
+    color:var(--black);
+    font-size: 1rem;
+}
 
 .footer{
     background: #fff;
@@ -99,12 +132,12 @@ color: var(--orange);
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap:.5rem;
 }
 
 .footer .box-container .box h3{
-    font-size: 2.5rem;
+    font-size: 1rem;
     color:var(--black);
     padding:1rem 0;
 }
@@ -115,7 +148,7 @@ color: var(--orange);
 
 .footer .box-container .box .links{
     display: block;
-    font-size: 1.5rem;
+    font-size: .8rem;
     color:var(--light-color);
     padding:1rem 0;
 }
@@ -132,17 +165,17 @@ color: var(--orange);
 
 .footer .box-container .box p{
     line-height: 1.8;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:var(--light-color);
     padding:1rem 0;
 }
 
 .footer .box-container .box .share a{
-    height:4rem;
-    width:4rem;
-    line-height:4rem;
-    border-radius: .5rem;
-    font-size: 2rem;
+    height:2rem;
+    width:2rem;
+    line-height:2rem;
+    border-radius: 0rem;
+    font-size: 1rem;
     color:var(--black);
     margin-right: .2rem;
     background: #eee;
@@ -158,8 +191,8 @@ color: var(--orange);
     text-align: center;
     margin-top: 2rem;
     padding:1rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
     color:var(--black);
     border-top: var(--border);
 }
