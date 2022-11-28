@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Speedy Delivery</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='css.style.css'>
+    <link rel='stylesheet' href='style.css'>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -26,36 +26,17 @@
 
     <div class="icons">
         <div class="fas fa-shopping-cart" id="shopping-cart-btn"></div>
-        <div class="fas fa-user" id="login-btn"></div>
     </div>
 
     <form action="" class="search-form">
         <input type="search" id="search-box" placeholder="Search here">
         <label for="search-box" class="fas fa-search"></label>
     </form>
-
-    <form action="" class="login-form" method="post">        
-        <h3>login form</h3>
-        <input type="email" placeholder="Enter Email" name="email" class="box">
-        <input type="password" placeholder="Enter Password" name="password" class="box">
-        <p>don't have an account? <a class="btn" id="register">register now</a></p>
-        <h4 class="btn" id="login" name="login">Login now</h4>
-    </form>
-
-    <form action="registration-form.php" method="post" class="registration-form">       
-        <h3>registration form</h3>
-        <input type="name" id="uname" name="uname" placeholder="Enter Full Name" class="box">
-        <input type="number" id="number" name="number" placeholder="Enter Contact Number" class="box">
-        <input type="email" id="email" name="email" placeholder="Enter Email" class="box">
-        <input type="password"  id="password" name="password" placeholder="Enter Password" class="box">
-        <h4 class="btn" id="register-now" name="register" value="submit">Register Now</h4>
-        <h5 class="btn" id="cross">x</h5>
-    </form>
 </header>
 <!-- header end -->
 <!--  Home -->
 
-<section class="home">
+<section class="home" id="home">
 <div class="content">
     <h3>Feel the<span> Speed</span></h3>
     <p>Delivering happiness and needs</p>
@@ -66,7 +47,7 @@
 
 <!-- Restaurants -->
 
-<section class="restaurants">
+<section class="restaurants" id="restaurants">
 
     <div class="heading"> Our <span>Restaurants</span></div>
 
@@ -168,10 +149,25 @@
         
         </section>
         
-             <!--features end -->
-        <!--reviews start-->
+<!--features end -->
+<!-- About Us -->
+<section class="aboutus" id="aboutus">
+
+    <div class="heading"> About <span>Us</span></div>
+        <div class="box-container">
+            <h3>Speedy Delivery is the leading online platform for food delivery.
+                We also provide a wide range of restaurants from all over the country.<br>
+                <span> Our delivery system is fastest in the entire nation</span> <br>
+                and our aim is to make the food ordering and delivering easier and faster so you can get your favorite meals in no time.
+            </h3>
+        </div>
+
+</section>
+
+<!-- About Us End -->
+<!--reviews start-->
         
-        <section class="review" id="rewiew">
+        <section class="reviews" id="reviews">
             <h1 class="heading">Customer's<span>reviews</span> </h1>
         
             <div class="box-container">
@@ -218,7 +214,7 @@
                     </div>
         
                     <div class="box">
-                        <img src="maleAvatar2   "">
+                        <img src="maleAvatar2   ">
                         <p></p>
                         <h3>name of 4thCustomer</h3>
                         <div class="stars">
@@ -232,29 +228,26 @@
                     </div>
             </div>
         </section>
-        
-        
-        
-        
-        
-        <!--reviews end-->
-        
+<!--reviews end-->
+    
+<!-- Send Message -->
 
-<!-- About Us -->
-<section class="aboutus">
-
-    <div class="heading"> About <span>Us</span></div>
-        <div class="box-container">
-            <h3>Speedy Delivery is the leading online platform for food delivery.
-                We also provide a wide range of restaurants from all over the country.<br>
-                <span> Our delivery system is fastest in the entire nation</span> <br>
-                and our aim is to make the food ordering and delivering easier and faster so you can get your favorite meals in no time.
-            </h3>
-        </div>
-
+<section class="reviewus">
+<div class="heading">
+    <h1>Your <span>Review</span></h1>
+</div>
+<form action="userinformation.php" method="post">
+    <input type="text" name="user" placeholder="Your Full Name" required/>
+    <br><br>
+    <input type="email" name="email" placeholder="Your E-Mail" required/>
+    <br><br>
+    <textarea name="message" placeholder="Type Your Review Here..." required></textarea>
+    <br><br>
+    <button class="main-btn reviewus-btn" type="submit">Send</button>
+</form>
 </section>
 
-<!-- About Us End -->
+<!-- Send message End-->
 
 <!-- footer -->
 
