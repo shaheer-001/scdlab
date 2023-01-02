@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Speedy Delivery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+<!-- header -->
+
+<header class="header">
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-cart"></i> Speedy Delivery </a>
+
+    <div class="icon">
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+</header>
+<!-- header end -->
+<!-- savour menu start -->
+<section class="savourmenu" id="savourmenu">
+    <h1 class="heading">our <span>menu</span></h1>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">Rs. 0.00</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="savour.js">
+</script>
+<!-- savour menu end -->
+</body>
+</html>
